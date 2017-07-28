@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="http://localhost:8055/style/adm.xsl"?>
+<Ged_Admin_Config>
+	<Mig_Heartbeat_Interval>60</Mig_Heartbeat_Interval>
+	<Mig_Php_Exec_Interval>60</Mig_Php_Exec_Interval>
+	<Mig_Port_Alloc_Change_Grace_Time>60</Mig_Port_Alloc_Change_Grace_Time>
+	<Scmq_Handler_Thread_Count>25</Scmq_Handler_Thread_Count>
+	<Close_Pim_On_Port_Alloc_Change>y</Close_Pim_On_Port_Alloc_Change>
+	<Close_Pim_On_Mig_Reconnect>y</Close_Pim_On_Mig_Reconnect>
+	<Ssl_Support_Pg>false</Ssl_Support_Pg>
+	<Log_Call_Variables>Y</Log_Call_Variables>
+	<Call_Var_Support>10</Call_Var_Support>
+	<Cri_Url>PROTOCOL://IP-ADDRESS:PORT/vrui/services/RouteRequestWebService.RouteRequestWebServiceHttpSoap12Endpoint/</Cri_Url>
+	<Vrui_Url>PROTOCOL://IP-ADDRESS:PORT/vrui/</Vrui_Url>
+	<ICM_Version>6</ICM_Version>
+	<Event_Handler_Thread_Count>25</Event_Handler_Thread_Count>
+	<Message_Handler_Thread_Count>25</Message_Handler_Thread_Count>
+	<Sci_Timeout>60</Sci_Timeout>
+	<Ecc_Tag_Conversion_Pattern>5000</Ecc_Tag_Conversion_Pattern>
+	<Route_Result_Format>
+		<Pattern>http:</Pattern>
+	</Route_Result_Format>
+	<License>
+		<License_Manager_Url>PROTOCOL://IP-ADDRESS:PORT/LicenseManager/license/grant</License_Manager_Url>
+		<Is_Disabled>true</Is_Disabled>
+		<Is_Secure>false</Is_Secure>
+	</License>
+<Ssl_Support_Mig>
+<Enable_Ssl>true</Enable_Ssl>
+<KeyStoreData>gedstorepass</KeyStoreData>
+<TrustStoreData>gedstorepass</TrustStoreData>
+<Key_Store_File>/opt/Servion/Ged/conf/Keystore.jks</Key_Store_File>
+<Trust_Store_File>/opt/Servion/Ged/conf/Keystore.jks</Trust_Store_File>
+<Need_Client_Auth>true</Need_Client_Auth>
+</Ssl_Support_Mig>
+</Ged_Admin_Config>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="http://localhost:8055/style/avp.xsl"?>
+<Avp_Config_Data>
+	<PortTimeout>10</PortTimeout>
+	<Pim_Mig_Script_Map>
+		<Pim_Name>CP_PH_PROD</Pim_Name>
+		<Mig_Details>
+		<Mig>
+				<!-- Define MIG[MPP] IP address -->
+				<Ip>10.26.49.132</Ip>
+				<Port>5050</Port>
+				<H323_Trunk_Grp_Id>1</H323_Trunk_Grp_Id>
+				<Sip_Trunk_Grp_Id>3</Sip_Trunk_Grp_Id>
+				<!-- Define conversion pattern if Trunk number exceeds 5 digits -->
+				<Channel_Conversion_Pattern_Start>50000</Channel_Conversion_Pattern_Start>
+				<!-- Do not modify. Used to identify MPP port condition -->
+				<In_Service_Phrase>In-Service</In_Service_Phrase>
+		</Mig>		
+		<Mig><!-- Define MIG[MPP] IP address -->
+<Ip>10.26.49.228</Ip>
+<Port>5050</Port>
+<H323_Trunk_Grp_Id>1</H323_Trunk_Grp_Id>
+<Sip_Trunk_Grp_Id>4</Sip_Trunk_Grp_Id>
+<!-- Define conversion pattern if Trunk number exceeds 5 digits -->
+<Channel_Conversion_Pattern_Start>50000</Channel_Conversion_Pattern_Start>
+<!-- Do not modify. Used to identify MPP port condition -->
+<In_Service_Phrase>In-Service</In_Service_Phrase>
+		</Mig>			
+		</Mig_Details>
+		<Run_Script_Details>
+			<Script>
+				<Name>.*</Name>
+				<an><Aee_Url>http://rw017.apac.nsroot.net:8443/VDF_TWC/VdfController?icmEnabled=true
+				</Aee_Url></an>
+				<an><Aee_Url>https://dev3.globalcommonivr.consumer.citigroup.net:5001/Phoenix-AUB/vxml/vdf/Dispatcher.jsp?icmEnabled=true
+				</Aee_Url></an>
+				<an><Aee_Url>https://sit2.globalcommonivr.consumer.citigroup.net:4001/Phoenix-AUB/vxml/vdf/Dispatcher.jsp?icmEnabled=true
+				</Aee_Url></an>
+			</Script>
+		</Run_Script_Details>
+	</Pim_Mig_Script_Map>
+	
+	
+</Avp_Config_Data>

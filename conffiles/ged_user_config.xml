@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="http://localhost:8055/style/user.xsl"?>
+<Ged_User_Config>
+	<!-- Connections from ICM-PG. GED connector listens on this port for connection request from PIM -->
+<Pim_Default_Params>
+		<!-- GED-125 Interfaces supported (Y-enable/N-disable)-->
+<Sci_Enabled>N</Sci_Enabled>
+<Edf_Enabled>Y</Edf_Enabled>
+<Cri_Enabled>Y</Cri_Enabled>
+		<!-- Define ECC variables to be pre-registered with PIM-->
+		
+<Init_Ecc_List>
+<Ecc_Var><Name>user_ApplicationData</Name></Ecc_Var>
+<Ecc_Var><Name>user_ATM360</Name></Ecc_Var>
+<Ecc_Var><Name>user_Cli</Name></Ecc_Var>
+<Ecc_Var><Name>user_Custom1</Name></Ecc_Var>
+<Ecc_Var><Name>user_Custom10</Name></Ecc_Var>
+<Ecc_Var><Name>user_Custom2</Name></Ecc_Var>
+<Ecc_Var><Name>user_Custom3</Name></Ecc_Var>
+<Ecc_Var><Name>user_Custom4</Name></Ecc_Var>
+<Ecc_Var><Name>user_Custom5</Name></Ecc_Var>
+<Ecc_Var><Name>user_Custom6</Name></Ecc_Var>
+</Init_Ecc_List>
+
+</Pim_Default_Params>
+
+	<!-- Define each PIM to be supported by this GED connector -->
+<Pim_Specific_Params>
+<Pim_Name>CP_PH_PROD</Pim_Name>
+<Ged_Server_Port>5000</Ged_Server_Port>
+<Pim_Ip>10.92.252.123</Pim_Ip>
+</Pim_Specific_Params>
+
+<Pim_Specific_Params>
+<Pim_Name>CP_MY_PROD</Pim_Name>
+<Ged_Server_Port>5002</Ged_Server_Port>
+<Pim_Ip>10.92.252.123</Pim_Ip>
+</Pim_Specific_Params>
+
+
+</Ged_User_Config>
